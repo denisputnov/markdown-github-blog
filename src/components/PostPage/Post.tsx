@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
-import usePostContent from '../../hooks/usePost'
+import usePostContent from '../../hooks/usePostContent'
 import { IPostContent } from '../../types/post'
 import classes from './Post.module.css'
 import ReactMarkdown from 'react-markdown'

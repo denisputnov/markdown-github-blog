@@ -1,0 +1,14 @@
+.Posts {
+  max-width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 300px; 
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .Posts {
+    grid-template-columns: 1fr;
+  }
+}

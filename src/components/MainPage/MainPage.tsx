@@ -1,11 +1,15 @@
 import React from 'react'
 import classes from './MainPage.module.css'
-import usePosts from '../../hooks/useLastPosts'
+import usePosts from '../../hooks/usePosts'
 import { IPost } from '../../types/post'
 import Post from '../PostCard/Post'
+import { Link } from 'react-router-dom'
 
 function MainPage() {
   const lastPosts = usePosts(6)
+
+  console.log(lastPosts);
+  
 
   return (
     <main className={classes.Main}>
@@ -22,6 +26,9 @@ function MainPage() {
             url={post.url}
           />
         )}
+      </div>
+      <div className={classes.Notice}>
+        <Link to='/posts' aria-label="Посмотреть все посты">Все посты</Link>
       </div>
     </main>
   )
