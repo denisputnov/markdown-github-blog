@@ -6,7 +6,7 @@ function Footer() {
     <footer className={classes.Footer}>
       <div className={classes.Links}>
         <a target="_blank" rel="noreferrer" href="https://github.com/grnbows">Github Профиль</a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/grnbows">Страница проекта</a>
+        <a target="_blank" rel="noreferrer" href="https://github.com/grnbows/markdown-github-blog">Страница проекта</a>
       </div>
       <p className={classes.Rights}>All Rights Reserved | 2021 © Denis Putnov </p>
     </footer>

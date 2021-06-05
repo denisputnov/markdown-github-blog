@@ -33,7 +33,7 @@ export default function usePosts(limit: number = 1000) {
     const getNewData = async () => {
       const dataJsonRegExp = new RegExp('articles.*data.json', 'g')
       const urlRegExp = new RegExp('/(.*)+/', 'g')
-      const tree: ITreeItem[] = await fetch('https://api.github.com/repos/grnbows/temporary-test/git/trees/main?recursive=1')
+      const tree: ITreeItem[] = await fetch('https://api.github.com/repos/grnbows/markdown-github-blog-data/git/trees/main?recursive=1')
         .then(res => res.json())
         .then(data => data.tree)
 

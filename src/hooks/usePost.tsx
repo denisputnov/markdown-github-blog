@@ -11,7 +11,7 @@ export default function usePostContent(postUri: string) {
     const getData = async () => {
       const postRegExp = new RegExp(`articles/${postUri}/`, 'm')
       const tree: ITreeItem[] = 
-        await fetch('https://api.github.com/repos/grnbows/temporary-test/git/trees/main?recursive=1')
+        await fetch('https://api.github.com/repos/grnbows/markdown-github-blog-data/git/trees/main?recursive=1')
         .then(res => res.json())
         .then(data => data.tree)
 
