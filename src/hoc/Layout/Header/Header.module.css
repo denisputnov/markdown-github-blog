@@ -1,0 +1,86 @@
+.Header {
+  display: flex;
+  padding: 0 5%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  position: relative;
+  display: block;
+  height: 35px;
+  width: 52px;
+  margin-right: 120px;
+  background: no-repeat center url(./logo.svg);
+  background-size: 100% 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.Logo::before {
+  content: "ProgWay Блог";
+  position: absolute;
+  display: block;
+  width: 110px;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+}
+
+.Logo::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 60px;
+  width: 0;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  background-color: rgb(0,0,0);
+}
+
+.Logo:hover::after {
+  width: 210%;
+  opacity: 1;
+}
+
+.Link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+}
+
+.Link:first-child {
+  margin-left: 0;
+}
+
+.Link:last-child {
+  margin-right: 0;
+}
+
+.Link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  background-color: rgb(0,0,0);
+}
+
+.Link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .Logo {
+    display: none;
+  }
+}

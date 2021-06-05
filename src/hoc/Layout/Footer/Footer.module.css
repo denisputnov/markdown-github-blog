@@ -1,0 +1,34 @@
+.Footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 200px;
+  background-color: whitesmoke;
+  padding: 0 5%;
+}
+
+.Rights {
+  color: #b6b6b6; 
+  font-size: 12px;
+  text-align: center;
+}
+
+.Links {
+  display: flex;
+  margin: auto;
+}
+.Links a {
+  color: #b6b6b6; 
+  text-decoration: none;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.Links a:first-child {
+  margin-left: 0;
+}
+.Links a:last-child {
+  margin-right: 0;
+}

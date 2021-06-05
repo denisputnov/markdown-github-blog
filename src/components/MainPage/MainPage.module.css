@@ -1,0 +1,22 @@
+.Main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.GridLastPosts {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 300px; 
+  gap: 20px;
+}
+
+.Title {
+  font-size: calc(16px + 1vw);
+}
+
+@media (max-width: 768px) {
+  .GridLastPosts {
+    grid-template-columns: 1fr;
+  }
+}
