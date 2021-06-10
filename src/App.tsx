@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import Layout from './hoc/Layout/Layout'
 
 import MainPage from './components/MainPage/MainPage'
@@ -9,7 +9,7 @@ import PageNotFound from './components/PageNotFound/PageNotFound'
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Layout>
         <Switch>
           <Route exact path='/' component={MainPage} />
@@ -18,7 +18,7 @@ function App() {
           <Route path='/:postname' component={Post}/>
         </Switch>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
