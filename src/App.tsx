@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={MainPage} />
           <Route exact path='/posts' component={AllPostsPage} />
-          <Route exact path='/404' component={PageNotFound}/>
+          {/* <Route exact path='/404' component={PageNotFound}/> */}
           <Route path='/:postname' component={Post}/>
         </Switch>
       </Layout>
