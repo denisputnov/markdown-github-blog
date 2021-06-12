@@ -41,7 +41,7 @@ export default function usePostContent(postUri: string) {
       setPost({...dataFileContent, content: articleFileContent } as IPostContent)
     }
     getData()
-  }, [postUri])  
+  }, [postUri, history])  
 
   return post
 }
