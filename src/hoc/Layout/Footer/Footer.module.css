@@ -18,17 +18,11 @@
 .Links {
   display: flex;
   margin: auto;
+  gap: 20px;
 }
 .Links a {
   color: #b6b6b6; 
   text-decoration: none;
   font-size: 16px;
-  margin: 20px;
-}
-
-.Links a:first-child {
-  margin-left: 0;
-}
-.Links a:last-child {
-  margin-right: 0;
+  text-align: center;
 }

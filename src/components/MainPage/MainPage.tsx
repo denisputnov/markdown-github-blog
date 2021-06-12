@@ -7,10 +7,6 @@ import { Link } from 'react-router-dom'
 
 function MainPage() {
   const lastPosts = usePosts(6)
-
-  console.log(lastPosts);
-  
-
   return (
     <main className={classes.Main}>
       <h3 className={classes.Title} tabIndex={0}>Последние посты:</h3>
